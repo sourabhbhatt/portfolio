@@ -1,0 +1,139 @@
+$Averia: "Averia Gruesa Libre", cursive;
+
+.footer-container {
+	width: 100%;
+	padding: 1em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	background: rgba(0, 0, 0, 0.7);
+	position: relative;
+	.heading-container {
+		padding: 0.5em 1em;
+		background-color: rgba(244, 67, 54, 0.9);
+		border-radius: 0.5em;
+		position: relative;
+		transform: translateY(-50%);
+		.footer-heading {
+			text-align: center;
+			width: fit-content;
+			font-family: $Averia;
+		}
+	}
+	.footer-form {
+		width: 60%;
+		padding: 1em 0;
+		.form {
+			background-color: #EEEEEE;
+			border-radius: 1em;
+			padding: 1em;
+		}
+		.red-star {
+			color: rgba(255, 0, 0, 0.8);
+			font-size: 1.4em;
+		}
+	}
+	.social-connect {
+		margin: 1em 0 2em;
+	}
+	#alertSection{
+		transition: 600ms ease;
+		max-height: 0;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.footer-container {
+		.footer-form {
+			width: 80%;
+		}
+	}
+}
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left: 0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 1em;
+}
+
+/* footer social icons */
+.social-network a.icoFacebook:hover {
+	background-color: #3b5998;
+}
+.social-network a.icoGit:hover {
+	background-color: #211f1f;
+}
+.social-network a.icoInsta:hover {
+	background-color: rgb(225,48,108);
+}
+.social-network a.icoLinkedIn:hover {
+	background-color: #0e76a8;
+}
+.social-network a.icoYoutube:hover {
+	background-color: #e7174b;
+}
+.social-network a.icoFacebook:hover i,
+.social-network a.icoGit:hover i,
+.social-network a.icoInsta:hover i,
+.social-network a.icoLinkedIn:hover i {
+	color: #fff;
+}
+a.socialIcon:hover,
+.socialHoverClass {
+	color: #44bcdd;
+}
+
+.social-circle li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+}
+.social-circle li i {
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: rgb(53, 53, 53);
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-network a {
+	background-color: #d3d3d3;
+}

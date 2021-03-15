@@ -1,0 +1,64 @@
+.first-look {
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    padding: 3em 0 3em 10em;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 2em;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .first-look-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .text {
+        color: #131212;
+        font-family: "Averia Gruesa Libre", cursive;
+    }
+    .code {
+        display: inline-flex;
+        line-height: 1.3em;
+        align-items: center;
+        font-family: "Fira Code", sans-serif;
+        font-weight: 700;
+        color: #e53935;
+        .techText {
+            white-space: nowrap;
+
+            overflow: hidden;
+            color: #e53935;
+        }
+        .cursor {
+            color: white;
+            animation: blink 500ms ease-in infinite;
+        }
+    }
+    .FirstLookImage {
+        height: 300px;
+        width: 300px;
+        border-radius: 300px;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .first-look {
+        padding: 2em 0;
+        font-size: 1em;
+        .first-look-container {
+            width: 80%;
+        }
+    }
+}

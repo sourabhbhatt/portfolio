@@ -1,0 +1,71 @@
+.banner {
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  max-height: 150%;
+  z-index: -1;
+  filter: grayscale(2) blur(1px);
+}
+
+.stot {
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  opacity: 0.5;
+  transition: 300ms ease;
+}
+
+.bubbleMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  border-bottom-left-radius: 50%;
+  overflow: hidden;
+  z-index: 99;
+  background-color: lightyellow;
+  .links1 {
+    text-align: right;
+    color: black;
+    .link1{
+      padding: 0.5em 1em;
+      font-size: medium;
+      margin: 1.5em 2em;
+      position: relative;
+      font-family: "Averia Gruesa Libre", cursive;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: 400ms ease;
+      &::before {
+        width: 100%;
+    }
+    transform: scale(1.2);
+    a{
+      color: black;
+      text-decoration: none;
+      i{
+          color: #26C6DA;
+      }
+  }
+    }
+    .link1::before {
+      position: absolute;
+      content: "";
+      bottom: -5px;
+      width: 0;
+      transition: 300ms ease;
+      border-top: 2px solid #b71c1c;
+  }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    max-width: 150%;
+    min-height: 100%;
+  }
+  .stot {
+    right: 1.5em;
+  }
+}
