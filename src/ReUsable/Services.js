@@ -7,25 +7,25 @@ import Title from './Title'
 export default class Services extends Component {
     state = {
         services: [
+            // {
+            //     icon: <AiFillAndroid />,
+            //     title: "ANDROID DEVELOPMENT",
+            //     info: "I develop Android mobile app's by using React-Native  ",
+            // },
             {
-                icon: <AiFillAndroid />,
-                title: "ANDROID DEVELOPMENT",
-                info: "I develop Android mobile app's by using React-Native  ",
-            },
-            {
-                icon: <AiFillApple />,
-                title: "IOS DEVELOPMENT",
-                info: "I develop IOS mobile app's by using React-Native ",
+                icon: <><AiFillAndroid /> / <AiFillApple /></>,
+                title: "NATIVE MOBILE APP DEVELOPMENT",
+                info: "I develop ANDROID / IOS mobile applications using React-Native.",
             },
             {
                 icon: <BsCodeSlash />,
                 title: "WEB DEVELOPMENT ",
-                info: "i like to code things valuing component based design patterns, and enjoy bringing ideas in the browser.",
+                info: "I like to code things valuing component-based design patterns, and enjoy bringing ideas in the browser.",
             },
             {
                 icon: <AiOutlineAlert />,
                 title: "INVOLVEMENT",
-                info: "Things I enjoy working with that makes quality of life better, I am currently working as a Front End Developer and Continous Integration using Git, ",
+                info: "Things I enjoy working with that make the quality of life better, I am currently working as a Front End Developer and Continous Integration using Git.",
             },
         ]
     }

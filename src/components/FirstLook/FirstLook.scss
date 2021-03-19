@@ -52,11 +52,12 @@
         opacity: 1;
     }
 }
-
 @media screen and (max-width: 900px) {
     .first-look {
-        padding: 2em 0;
+        padding: 2em 0 4em 2em;
         font-size: 1em;
+        display: block;
+
         .first-look-container {
             width: 80%;
         }

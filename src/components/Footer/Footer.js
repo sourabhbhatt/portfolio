@@ -24,9 +24,7 @@ export default function Footer() {
             .from('.footer-heading', { opacity: 0, y: -10, duration: 1, ease: Bounce.easeOut })
     }
 
-    useEffect(() => {
-        AnimateHeading();
-    })
+    useEffect(() => { AnimateHeading(); })
 
     const submitResponse = (e) => {
         e.preventDefault();
@@ -88,15 +86,10 @@ export default function Footer() {
                     </div>
 
                     <button type="submit" className="btn btn-primary" disabled={sending}>
-                        {
-                            sending ?
-                                <span>
-                                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                                    <span> Sending...</span>
-                                </span>
-                                :
-                                "Submit"
-                        }
+                        {sending ? <span>
+                            <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            <span> Sending...</span>
+                        </span> : "Submit"}
                     </button>
                     <div id='alertSection'>
                         <div className="alert alert-success mt-4" role="alert">
@@ -112,13 +105,10 @@ export default function Footer() {
                     <li><a href="https://github.com/sourabhbhatt/" target="_blank" rel="noopener noreferrer" className="icoGit" title="GitHub"><i className="fa fa-github"></i></a></li>
                     <li><a href="https://www.instagram.com/sourabh2222/" target="_blank" rel="noopener noreferrer" className="icoInsta" title="Instagram"><i className="fa fa-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/sourabh-b-399476b0/" target="_blank" rel="noopener noreferrer" className="icoLinkedIn" title="LinkedIn"><i className="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCCgn31a72rIeBUttNpn_oWA" target="_blank" rel="noopener noreferrer" className="icoYoutube" title="LinkedIn"><i className="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCCgn31a72rIeBUttNpn_oWA" target="_blank" rel="noopener noreferrer" className="icoYoutube" title="Youtube"><i className="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
-            <div className="text-center">
-                © 2020 Copyright:&nbsp;&nbsp;
-                <a href="#" style={{ textDecoration: 'none' }}>SOURABH BHATT</a>
-            </div>
+            <div className="text-center">© 2020 Copyright:&nbsp;&nbsp; <a href="#" style={{ textDecoration: 'none' }}>SOURABH BHATT</a></div>
         </div>
     )
 }

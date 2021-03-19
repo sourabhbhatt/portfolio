@@ -37,7 +37,7 @@ export default function AboutMe() {
             <div className='container'>
                 <img src={require('../../Assets/hand-wave.png')} className='hand-wave' alt=" "/>
                 {/* <p className='aboutme-text'>"A passionate developer, always keen to learn what is new in the developers community, with a slight inclination towards front-end (because afterall reality is what you see <span aria-label='jsx-a11y/accessible-emoji' role='img'>😉</span>)"</p> */}
-                <p className='aboutme-text'>"With a strong foundation in computer science, i am passionat about web design and development, and interested in mobile app development. As i grow as a developer, I hope to Write clean, readable code that can be used by other and leveraged to create beautiful software. <span aria-label='jsx-a11y/accessible-emoji' role='img'>🙂</span>)"</p>
+                <p className='aboutme-text'>"With a strong foundation in computer science, I am passionate about Mobile app development and interested in web design and development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software. <span aria-label='jsx-a11y/accessible-emoji' role='img'>🙂</span>)"</p>
             </div>
         </div>
     )
